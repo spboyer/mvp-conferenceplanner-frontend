@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.days {
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+mat-card {
+  text-align: left;
+  width: 350px;
+}
+
+mat-card-content {
+  margin-left: 50px;
+}
+
+mat-card-subtitle {
+  color: darkgrey;
+}
+mat-card-actions {
+  text-align: center;
+}
+
+.done {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}

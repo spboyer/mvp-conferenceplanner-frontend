@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div>
+      <span class="title"><a [routerLink]="['/']" routerLinkActive="router-link-active">Conference Planner</a></span>
+      <a mat-button [routerLink]="['/sessions']" routerLinkActive="router-link-active">
+        <span>Sessions</span>
+      </a>
+      <a mat-button [routerLink]="['/speakers']" routerLinkActive="router-link-active">
+        <span>Speakers</span>
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
