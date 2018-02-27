@@ -8,10 +8,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve": "ng build && node index.js"
   },
   "private": true,
   "dependencies": {
+    "express": "4.16.2",
     "@angular-devkit/core": "^0.4.2",
     "@angular/animations": "^5.0.0",
     "@angular/cdk": "^5.2.2",
