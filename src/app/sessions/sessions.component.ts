@@ -12,7 +12,7 @@ export class SessionsComponent implements OnInit {
     sessions: Session[];
     days: Day[] = new Array();
     dayNames: string[] = new Array();
-    selectedDay = 0;
+    selectedDay = 2;
 
     constructor(private dataService: DataService) { }
 
@@ -23,12 +23,12 @@ export class SessionsComponent implements OnInit {
         .then(sessions => this.sessions = sessions)
         .then((sessions) => {
           console.log('date stuff');
-          for (let s of sessions) {
+          for (const s of sessions) {
               // load the days, of the week.
-            let d = new Date(s.startTime);
-            let n = this.dayOfWeek(d.getDay());
+            const d = new Date(s.startTime);
+            const n = this.dayOfWeek(d.getDay());
 
-            let day = new Day();
+            const day = new Day();
             day.name = n;
             day.num = d.getDay();
 

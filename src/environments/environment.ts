@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  API_URL: 'https://aspnetcorews-backend.azurewebsites.net/'
+  API_URL: 'https://backend-mvp-conference-3166.vsce.io/'
 };
