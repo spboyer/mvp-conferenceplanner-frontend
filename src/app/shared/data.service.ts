@@ -25,6 +25,7 @@ export class DataService {
 
   getSession(id: number): Promise<Session> {
     const url = `${this.baseUrl + this.sessionUrl}/${id}`;
+
     return this.http.get(url)
       .toPromise()
       .then(response => <Session>response.json())
@@ -33,6 +34,8 @@ export class DataService {
 
   getSpeaker(id: number): Promise<Speaker> {
     const url = `${this.baseUrl + this.speakerUrl}/${id}`;
+    console.log(url);
+
     return this.http.get(url)
       .toPromise()
       .then(response => <Speaker>response.json())

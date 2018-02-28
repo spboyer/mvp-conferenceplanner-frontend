@@ -1,0 +1,16 @@
+
+<div style="margin-left:20px">
+
+<h2>{{speaker.name}}</h2>
+
+<p>{{speaker.bio}}</p>
+
+<h3>Sessions</h3>
+
+<mat-list>
+    <mat-list-item *ngFor="let session of speaker.sessions">
+      <mat-icon matListIcon>event</mat-icon>
+      <h3 matLine> <a [routerLink]="['/sessiondetail', session.id]">{{session.title}}</a></h3>
+    </mat-list-item>
+  </mat-list>
+</div>

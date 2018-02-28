@@ -1,0 +1,21 @@
+
+<div style="margin-left: 20px">
+  
+  <h1>{{session.title}}</h1>
+
+  <mat-chip-list>
+    <mat-chip color="accent" selected="true">{{session.track.name}}</mat-chip>
+  </mat-chip-list>
+
+
+    <mat-list>
+      <mat-list-item *ngFor="let speaker of session.speakers">
+        <mat-icon matListIcon>face</mat-icon>
+        <h3 matLine> <a [routerLink]="['/speaker', speaker.id]">{{speaker.name}}</a></h3>
+      </mat-list-item>
+    </mat-list>
+
+
+  <p>{{session.abstract}}</p>
+
+</div>
